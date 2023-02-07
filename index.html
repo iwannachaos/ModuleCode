@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Code IT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="imgs/logo.png" class="logo" alt="" /></a>
+
+      <div class="group">
+        <ul class="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="https://modulecode.ru/store">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search">
+          <!-- <span class="material-icons"class="searchBtn">search</span>
+            <span class="material-icons" class="searchCloseBtn">close</span> -->
+          <span class="searchIcon">
+            <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+            <ion-icon name="close-outline" class="searchCloseBtn"></ion-icon>
+          </span>
+        </div>
+        <div class="searchBox">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      let searchBtn = document.querySelector(".searchBtn");
+      let searchCloseBtn = document.querySelector(".searchCloseBtn");
+      let searchBox = document.querySelector(".searchBox");
+
+      searchBtn.onclick = function () {
+        searchBox.classList.add("active");
+        searchCloseBtn.classList.add("active");
+        searchBtn.classList.add("active");
+      };
+      searchCloseBtn.onclick = function () {
+        searchBox.classList.remove("active");
+        searchCloseBtn.classList.remove("active");
+        searchBtn.classList.remove("active");
+      };
+    </script>
+
+    <section id="hero">
+      <h4>Trade-in-offer</h4>
+      <h2>Super value deals</h2>
+      <h1>On all products</h1>
+      <p>Save more!</p>
+      <button>Shop Now</button>
+    </section>
+
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+        <img src="imgs/features/f1.png" alt="" />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="fe-box">
+        <img src="imgs/features/f2.png" alt="" />
+        <h6>Online order</h6>
+      </div>
+      <div class="fe-box">
+        <img src="imgs/features/f3.png" alt="" />
+        <h6>Save Money</h6>
+      </div>
+      <div class="fe-box">
+        <img src="imgs/features/f4.png" alt="" />
+        <h6>Promotions</h6>
+      </div>
+      <div class="fe-box">
+        <img src="imgs/features/f5.png" alt="" />
+        <h6>Happy Sell</h6>
+      </div>
+      <div class="fe-box">
+        <img src="imgs/features/f6.png" alt="" />
+        <h6>24/7 Support</h6>
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Collection</p>
+      <div class="pro-contaiber">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="pro">
+                <img src="imgs/products/f1.jpg" />
+                <div class="des">
+                  <span>adidas</span>
+                  <h5>T-shirt</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <!-- price -->
+                  <h4>100$</h4>
+                </div>
+                <!-- <a href = "#" class = "fal fa-shopping-cart"></a> -->
+                <ion-icon name="cart-outline" class="cart"></ion-icon>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pro">
+                <img src="imgs/products/f2.jpg" />
+                <div class="des">
+                  <span>adidas</span>
+                  <h5>T-shirt</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <!-- price -->
+                  <h4>100$</h4>
+                </div>
+                <!-- <a href = "#" class = "fal fa-shopping-cart"></a> -->
+                <ion-icon name="cart-outline" class="cart"></ion-icon>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pro">
+                <img src="imgs/products/f3.jpg" />
+                <div class="des">
+                  <span>adidas</span>
+                  <h5>T-shirt</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <!-- price -->
+                  <h4>100$</h4>
+                </div>
+                <!-- <a href = "#" class = "fal fa-shopping-cart"></a> -->
+                <ion-icon name="cart-outline" class="cart"></ion-icon>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pro">
+                <img src="imgs/products/f5.jpg" />
+                <div class="des">
+                  <span>adidas</span>
+                  <h5>T-shirt</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <!-- price -->
+                  <h4>100$</h4>
+                </div>
+                <!-- <a href = "#" class = "fal fa-shopping-cart"></a> -->
+                <ion-icon name="cart-outline" class="cart"></ion-icon>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pro">
+                <img src="imgs/products/f6.jpg" />
+                <div class="des">
+                  <span>adidas</span>
+                  <h5>T-shirt</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <!-- price -->
+                  <h4>100$</h4>
+                </div>
+                <!-- <a href = "#" class = "fal fa-shopping-cart"></a> -->
+                <ion-icon name="cart-outline" class="cart"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            mousewheel: true,
+            keyboard: true,
+          });
+        </script>
+      </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+      <h4>Services</h4>
+      <h2>Something <span>special</span> sales</h2>
+      <button class="normal">Explore more</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
